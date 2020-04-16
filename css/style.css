@@ -14,6 +14,7 @@
 .container {
     width: 1140px;
     margin: 0 auto;
+    position: relative;
 }
 
 .logo .logo_img {
@@ -78,7 +79,7 @@ h2.title {
     font-weight: 700;
 }
 
-.promo .promo_btn {
+.promo .promo_btn, .gift .gift_btn {
     display: block;
     margin: 0 auto;
     margin-top: 73px;
@@ -98,11 +99,15 @@ h2.title {
     outline: none;
 }
 
+.gift .gift_btn {
+    margin-top: 52px; 
+}
+
 .more {
     margin-top: 73px;
 }
 
-.more .more_txt {
+.more .more_text {
     color: #ffffff;
     font-family: "Roboto - Thin";
     font-size: 15px;
@@ -119,11 +124,11 @@ h2.title {
 
 .waiting {
     background-color: #efefef;
-    height: 604px;
+    min-height: 604px;
     padding: 85px 0 75px 0;
 }
 
-.waiting .waiting_header {
+.waiting .waiting_header, .finish .finish_header, .firstweb .firstweb_header {
     color: #252525;
     font-family: Roboto;
     font-size: 30px;
@@ -132,7 +137,15 @@ h2.title {
     text-align: center;
 }
 
-.waiting .waiting_divider {
+.finish .finish_header {
+    color: #efefef;
+}
+
+.firstweb .firstweb_header {
+    margin-top: 37px;
+}
+
+.waiting .waiting_divider, .finish .finish_divider {
     margin: 0 auto;
     margin-top: 18px;
     width: 217px;
@@ -171,5 +184,140 @@ h2.title {
     font-weight: 300;
     line-height: 21px;
     margin-top: 33px;
+}
+
+.optimization {
+    padding: 102px 0 107px 0;
+    min-height: 550px;
+}
+
+.optimization .optimization_header, .firstweb .firstweb_time {
+    margin-left: 391px;
+    color: #299cbd;
+    font-family: "Roboto - Black";
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.firstweb .firstweb_time {
+    margin-left: 0;
+    margin-top: 30px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.optimization .optimization_text {
+    margin: 25px 0 0 391px;
+    color: #4a4a4a;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 27px;
+    font-family: "Roboto Light";
+    font-weight: 300;
+}
+
+.optimization .optimization_text span {
+    font-family: "Roboto - Bold";
+    font-weight: 700;
+}
+
+.optimization .optimization_img {
+    position: absolute;
+    top: -54px;
+    left: -240px;
+    z-index: -1;
+}
+
+.finish {
+    min-height: 447px;
+    padding: 86px 0 79px 0;
+    background: url('/img/bg2.jpg') center center/cover no-repeat;
+}
+
+.finish .finish_wrapper {
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.finish .finish_wrapper .finish_item {
+    width: 204px;
+}
+
+.finish .finish_wrapper .finish_item .finish_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 115px;
+    height: 115px;
+    background-color: #b4e2ff;
+    border-radius: 100%;
+} 
+
+.finish .finish_wrapper .finish_item .finish_descr {
+    margin-top: 25px;
+    text-align: center;
+    color: #efefef;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.gift {
+    background-color: #efefef;
+    min-height: 628px;
+    padding: 86px 0 87px 0;
+}
+
+.gift .gift_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.gift .gift_text {
+    margin-top: 42px;
+    color: #252525;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 43px;
+    text-align: center;
+}
+
+.firstweb {
+    background-color: #fff;
+    padding: 89px 0 64px 0;
+    min-height: 515px;
+}
+
+.firstweb .firstweb_img {
+    display: block;
+    margin: 0 auto;    
+}
+
+.firstweb .firstweb_text {
+    margin-top: 25px;
+    color: #4a4a4a;
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer {
+    min-height: 166px;
+    background-color: #1a1a1a;
+    padding: 61px 0 69px 0;
+}
+
+.footer .footer_text, a {
+    text-align: center;
+    color: #888888;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
 }
 
